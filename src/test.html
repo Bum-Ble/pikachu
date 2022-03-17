@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pikachu</title>
+</head>
+<body>
+<style id="demo"></style>
+<div id="demo2"></div>
+<div id="buttons">
+  <button id="btnPause">暂停</button>
+  <button id="btnBegin">播放</button>
+  <button id="btnSlow">慢速</button>
+  <button id="btnNormal">中速</button>
+  <button id="btnFast">快速</button>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  *::before, *::after {
+    box-sizing: border-box;
+  }
+  #demo2 {
+    width: 100%;
+    height: 50vh;
+    overflow-y: auto;
+    position: fixed;
+    padding-bottom: 10px;
+  }
+  #html{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+  }
+  #buttons {
+    position: fixed;
+    right: 6px;
+    top: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+  #buttons > button{
+    padding: 3px 4px;
+    margin: 5px 0;
+  }
+</style>
+<div id="html">
+  <div class="skin">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="nose"></div>
+    <div class="face left"></div>
+    <div class="face right"></div>
+    <div class="mouth">
+      <div class="up">
+        <div class="lip left"></div>
+        <div class="lip right"></div>
+      </div>
+      <div class="down">
+        <div class="outside">
+          <div class="inside"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="./test.js"></script>
+</div>
+</body>
+</html>
